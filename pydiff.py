@@ -25,6 +25,7 @@ def find_new_entries(file_a, file_b, new_file):
                 fb.write(entry + '\n')
 
         print(f"Found {len(new_entries)} new entries. Updated '{new_file}' and '{file_b}'.")
+        [print(entry) for entry in new_entries]
     else:
         print("No new entries found.")
 
